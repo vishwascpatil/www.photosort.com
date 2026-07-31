@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhotoSort — All Your Memories, Organized Beautifully</title>
+  <meta name="description" content="PhotoSort is a free, offline desktop app that intelligently organizes your photos and videos. Face recognition, duplicate cleanup, document scanning, and more — all private, all on your machine." />
+  <meta name="keywords" content="photo organizer, desktop app, photo management, duplicate finder, face recognition, offline, privacy, free" />
+  <meta name="author" content="PhotoSort" />
+  <meta property="og:title" content="PhotoSort — All Your Memories, Organized Beautifully" />
+  <meta property="og:description" content="The intelligent, offline desktop app to browse, organize, and clean up your photo library. Free for Windows & Mac." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.photosort.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        <span class="brand-photo">Photo</span><span class="brand-sort">Sort</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#download" class="nav-cta">Download Free</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        100% Free &amp; Offline
+      </div>
+      <h1 class="hero-title">
+        All your memories.<br />
+        <span class="hero-gradient-text">Organized beautifully.</span>
+      </h1>
+      <p class="hero-subtitle">
+        The intelligent desktop app that browses, organizes, and cleans up<br class="hide-mobile" />
+        your entire photo &amp; video library — privately, on your machine.
+      </p>
+      <div class="hero-actions">
+        <a href="#download" class="btn btn-primary btn-lg" id="heroDownloadWindows">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+          Download for Windows
+        </a>
+        <a href="#download" class="btn btn-secondary btn-lg" id="heroDownloadMac">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download for Mac
+        </a>
+      </div>
+      <p class="hero-version">v1.0.0 · Windows 10+ &amp; macOS 12+</p>
+      <div class="hero-screenshot-wrapper">
+        <div class="screenshot-glow"></div>
+        <img src="assets/app-screenshot.png" alt="PhotoSort App Interface" class="hero-screenshot" loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRUSTED BY / STATS ===================== -->
+  <section class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-number" data-count="100">100%</span>
+        <span class="stat-label">Private & Offline</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">50+</span>
+        <span class="stat-label">Photo Formats</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">AI</span>
+        <span class="stat-label">Face Recognition</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">150+</span>
+        <span class="stat-label">Document Types</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="features" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2 class="section-title">Everything you need to<br /><span class="gradient-text">manage your memories.</span></h2>
+        <p class="section-subtitle">Built with the power of AI and the respect for your privacy.</p>
+      </div>
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card feature-card-large">
+          <div class="feature-icon-wrap" style="--accent: #7c5cfc;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="feature-title">Face Recognition</h3>
+          <p class="feature-desc">Automatically identifies and groups people across your entire library. Find every photo of someone instantly.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap" style="--accent: #f97316;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="feature-title">Places</h3>
+          <p class="feature-desc">See your photos on a map. GPS metadata reveals everywhere you've been.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap" style="--accent: #06b6d4;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/><line x1="17" y1="17" x2="22" y2="17"/></svg>
+          </div>
+          <h3 class="feature-title">Videos</h3>
+          <p class="feature-desc">Full video playback, thumbnails, and video-specific cleanup tools.</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap" style="--accent: #ec4899;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3 class="feature-title">Duplicate Finder</h3>
+          <p class="feature-desc">Pixel-perfect comparison to find exact and near-duplicate photos. Reclaim gigabytes of space.</p>
+        </div>
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap" style="--accent: #10b981;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 class="feature-title">Document Scanner</h3>
+          <p class="feature-desc">OCR-powered scanning detects 150+ document types — IDs, receipts, prescriptions, and more.</p>
+        </div>
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap" style="--accent: #eab308;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="feature-title">Favorites & Albums</h3>
+          <p class="feature-desc">Mark your best shots, create collections, and relive your favorite moments effortlessly.</p>
+        </div>
+        <!-- Feature 7 -->
+        <div class="feature-card feature-card-large">
+          <div class="feature-icon-wrap" style="--accent: #8b5cf6;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3 class="feature-title">Smart Search</h3>
+          <p class="feature-desc">Find any photo instantly by date, location, person, document type, or tag. Your entire library at your fingertips.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SHOWCASE ===================== -->
+  <section class="showcase">
+    <div class="section-container">
+      <div class="showcase-row">
+        <div class="showcase-text">
+          <span class="section-tag">Intelligent Organization</span>
+          <h2 class="section-title">Your photos,<br /><span class="gradient-text">sorted by AI.</span></h2>
+          <p class="showcase-desc">PhotoSort uses on-device AI to recognize faces, read documents, tag locations, and categorize every photo — without uploading a single byte to the cloud.</p>
+          <ul class="showcase-list">
+            <li><span class="check-icon">✓</span> Face recognition & grouping</li>
+            <li><span class="check-icon">✓</span> GPS-based location mapping</li>
+            <li><span class="check-icon">✓</span> OCR document detection</li>
+            <li><span class="check-icon">✓</span> Auto-tagging & categorization</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="assets/feature-organize.png" alt="AI-powered photo organization" loading="lazy" />
+        </div>
+      </div>
+      <div class="showcase-row showcase-row-reverse">
+        <div class="showcase-text">
+          <span class="section-tag">Cleanup Tools</span>
+          <h2 class="section-title">Reclaim your<br /><span class="gradient-text">storage space.</span></h2>
+          <p class="showcase-desc">Find and remove duplicate photos with pixel-perfect accuracy. Clean up screenshots, WhatsApp junk, and oversized files in one click.</p>
+          <ul class="showcase-list">
+            <li><span class="check-icon">✓</span> Pixel-density duplicate comparison</li>
+            <li><span class="check-icon">✓</span> Screenshot detection</li>
+            <li><span class="check-icon">✓</span> WhatsApp junk cleanup</li>
+            <li><span class="check-icon">✓</span> Large file identification</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="assets/feature-cleanup.png" alt="Duplicate photo cleanup" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">Up and running in<br /><span class="gradient-text">three simple steps.</span></h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Download &amp; Install</h3>
+          <p class="step-desc">Grab the installer for Windows or Mac. It's free, lightweight, and installs in under a minute.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Import Your Library</h3>
+          <p class="step-desc">Point PhotoSort at your photo folders — local drives, external storage, or Google Photos takeout.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Sit Back &amp; Explore</h3>
+          <p class="step-desc">AI scans, organizes, and tags everything. Browse by people, places, dates, or documents — instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRIVACY ===================== -->
+  <section class="privacy" id="privacy">
+    <div class="section-container">
+      <div class="privacy-card">
+        <div class="privacy-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h2 class="privacy-title">Your photos never leave your device.</h2>
+        <p class="privacy-desc">
+          PhotoSort runs 100% offline. No cloud uploads, no accounts, no tracking. 
+          All AI processing — face recognition, document scanning, duplicate detection — 
+          happens entirely on your machine. Your memories are yours alone.
+        </p>
+        <div class="privacy-badges">
+          <div class="privacy-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            No Cloud Uploads
+          </div>
+          <div class="privacy-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+            No Account Required
+          </div>
+          <div class="privacy-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            On-Device AI
+          </div>
+          <div class="privacy-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Open Source
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOWNLOAD ===================== -->
+  <section class="download" id="download">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Download</span>
+        <h2 class="section-title">Ready to organize<br /><span class="gradient-text">your memories?</span></h2>
+        <p class="section-subtitle">Free forever. No strings attached.</p>
+      </div>
+      <div class="download-grid">
+        <!-- Windows -->
+        <div class="download-card">
+          <div class="download-os-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+          </div>
+          <h3 class="download-os">Windows</h3>
+          <p class="download-req">Windows 10 or later<br />64-bit · ~120 MB</p>
+          <a href="https://github.com/vishwascpatil/PhotoSortApp/releases" class="btn btn-primary btn-download" id="downloadWindows">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download .exe Installer
+          </a>
+          <a href="https://github.com/vishwascpatil/PhotoSortApp/releases" class="download-alt" id="downloadWindowsPortable">
+            or download portable version (.zip)
+          </a>
+        </div>
+        <!-- macOS -->
+        <div class="download-card">
+          <div class="download-os-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          </div>
+          <h3 class="download-os">macOS</h3>
+          <p class="download-req">macOS 12 Monterey or later<br />Apple Silicon &amp; Intel · ~130 MB</p>
+          <a href="https://github.com/vishwascpatil/PhotoSortApp/releases" class="btn btn-primary btn-download" id="downloadMac">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download .dmg Installer
+          </a>
+          <a href="https://github.com/vishwascpatil/PhotoSortApp/releases" class="download-alt" id="downloadMacZip">
+            or download .zip archive
+          </a>
+        </div>
+      </div>
+      <div class="download-source">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <span>PhotoSort is open source. <a href="https://github.com/vishwascpatil/PhotoSortApp" target="_blank" rel="noopener">View on GitHub →</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-photo">Photo</span><span class="brand-sort">Sort</span>
+        <p class="footer-tagline">All your memories. Organized beautifully.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#download">Download</a>
+          <a href="https://github.com/vishwascpatil/PhotoSortApp/releases" target="_blank" rel="noopener">Changelog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="https://github.com/vishwascpatil/PhotoSortApp" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/vishwascpatil/PhotoSortApp/issues" target="_blank" rel="noopener">Report a Bug</a>
+          <a href="#privacy">Privacy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PhotoSort. Made with care for your memories.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
