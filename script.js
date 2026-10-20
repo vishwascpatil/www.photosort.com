@@ -112,4 +112,42 @@ document.addEventListener('DOMContentLoaded', () => {
       glow.style.transform = `translate(calc(-50% + ${x * factor}px), ${y * factor}px)`;
     });
   }, { passive: true });
+
+  // =================== GA4 EVENT TRACKING ===================
+  const trackDownload = (platform, format, buttonId) => {
+    if (typeof gtag === 'function') {
+      gtag('event', 'download', {
+        event_category: 'Software Download',
+        event_label: `${platform} - ${format}`,
+        platform: platform,
+        file_format: format,
+        button_id: buttonId
+      });
+    }
+  };
+
+  const heroWinBtn = document.getElementById('heroDownloadWindows');
+  if (heroWinBtn) {
+    heroWinBtn.addEventListener('click', () => trackDownload('Windows', 'exe', 'heroDownloadWindows'));
+  }
+
+  const downloadWinBtn = document.getElementById('downloadWindows');
+  if (downloadWinBtn) {
+    downloadWinBtn.addEventListener('click', () => trackDownload('Windows', 'exe', 'downloadWindows'));
+  }
+
+  const downloadWinPortableBtn = document.getElementById('downloadWindowsPortable');
+  if (downloadWinPortableBtn) {
+    downloadWinPortableBtn.addEventListener('click', () => trackDownload('Windows', 'zip', 'downloadWindowsPortable'));
+  }
+
+  const heroMacBtn = document.getElementById('heroDownloadMac');
+  if (heroMacBtn) {
+    heroMacBtn.addEventListener('click', () => trackDownload('macOS', 'link', 'heroDownloadMac'));
+  }
+
+  const downloadMacBtn = document.getElementById('downloadMac');
+  if (downloadMacBtn) {
+    downloadMacBtn.addEventListener('click', () => trackDownload('macOS', 'coming_soon', 'downloadMac'));
+  }
 });

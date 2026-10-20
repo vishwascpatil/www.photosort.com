@@ -228,17 +228,18 @@ img {
   animation: fadeInUp 0.8s var(--ease-out) both;
 }
 
+.badge-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--accent-light);
+  flex-shrink: 0;
+}
+
 .badge-dot {
   width: 6px;
   height: 6px;
-  background: #22c55e;
+  background: var(--accent-light);
   border-radius: 50%;
-  animation: pulse-dot 2s ease infinite;
-}
-
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
 }
 
 .hero-title {
